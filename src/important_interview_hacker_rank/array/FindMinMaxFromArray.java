@@ -1,4 +1,4 @@
-package important_interview_hacker_rank;
+package important_interview_hacker_rank.array;
 
 import java.util.Arrays;
 
