@@ -5,12 +5,16 @@ import java.util.List;
 
 public class NthSalaryFromList {
 
-    public static void main(String[] args) {
+    static Employee getNthSalary(int nTh){
         List<Employee> empList = new Employee().getEmployees();
-        Employee emp = empList.stream()
+        return empList.stream()
                 .sorted(Comparator.comparing(Employee::getSalary)
-                        .reversed()).toList().get(2);
-        System.out.println(emp);
+                        .reversed()).toList().get(nTh);
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(getNthSalary(2));
     }
 
 }

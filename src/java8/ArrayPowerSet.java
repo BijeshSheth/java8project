@@ -3,8 +3,10 @@ package java8;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-public class ArrayDemo {
+public class ArrayPowerSet {
 
     public static void main(String[] args) {
         List<Integer> input = Arrays.asList(1, 3, 5);
